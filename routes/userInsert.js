@@ -16,7 +16,7 @@ module.exports = {
       })
         .then((result) => {
           if (!result[1]) {
-            res('name exists');
+            res('exists');
           } else {
             res('done');
           }
