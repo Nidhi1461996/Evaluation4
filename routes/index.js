@@ -4,6 +4,7 @@ const userInsert = require('./userInsert');
 const updateScore = require('./updateScore');
 const getToppers = require('./getToppers');
 const historyUpdate = require('./insertToHistoryTable');
+const get = require('./fetchHistory');
 
 
 module.exports = []
@@ -12,5 +13,6 @@ module.exports = []
   .concat(userInsert.route)
   .concat(updateScore.route)
   .concat(getToppers.route)
-  .concat(historyUpdate.route);
+  .concat(historyUpdate.route)
+  .concat(get.route);
 
