@@ -3,6 +3,7 @@ const qAndA = require('./questionAndAnswers');
 const userInsert = require('./userInsert');
 const updateScore = require('./updateScore');
 const getToppers = require('./getToppers');
+const historyUpdate = require('./insertToHistoryTable');
 
 
 module.exports = []
@@ -10,5 +11,6 @@ module.exports = []
   .concat(qAndA.route)
   .concat(userInsert.route)
   .concat(updateScore.route)
-  .concat(getToppers.route);
+  .concat(getToppers.route)
+  .concat(historyUpdate.route);
 

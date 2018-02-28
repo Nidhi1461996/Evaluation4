@@ -8,6 +8,7 @@ module.exports = {
       models.users.findAll({
         order: [
           ['score', 'DESC']],
+        limit: 5,
       }).then((result) => {
         res(result);
       });
